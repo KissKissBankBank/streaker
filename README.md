@@ -26,25 +26,35 @@ Streak.configure do |config|
   config.api_key = 'YOUR_API_KEY_HERE'
 
   # Provide an identifier for the pipeline(s) you with to access.
+  # You can find the pipeline keys keys by adding your api key, then typing
+  # inside a console:
+  #     $ bin/console
+  #     > Streak::Pipeline
   config.pipeline_keys = {
     my_default_pipeline: 'YOUR_PIPELINE_KEY_HERE',
   }
 
   # Provide an identifier for each "Stage" your boxes can go through.
-  # You can find the stage keys by typing inside a console:
+  # You can find the stage keys by adding a pipeline key, then typing
+  # inside a console:
   #
-  #     Streak.api_key = 'YOUR_API_KEY_HERE'
-  #     Streak::Stage.all('YOUR_PIPELINE_KEY_HERE')
+  #     $ bin/console
+  #     > pipeline = Streaker.configuration.pipelines.values.first
+  #     > stages = Streak::Stage.all(pipeline).instance_variable_get('@values')
+  #     > values = stages.map { |value| value.instance_variable_get('@values') }
+  #     > values.map { |value| [value[:key].to_i, value[:name]] }.to_h
   config.stage_keys = {
     my_stage: 1042,
   }
 
   # Provide an identifier for each custom field your boxes can have.
-  # You can find all the field keys by typing inside a console:
+  # You can find all the field keys by adding a pipeline key, then typing
+  # inside a console:
   #
-  #     Streak.api_key = 'YOUR_API_KEY_HERE'
-  #     box = Streak::Box.all('YOUR_PIPELINE_KEY_HERE').first
-  #     Streak::FieldValue.all(box.key)
+  #     $ bin/console
+  #     > pipeline_key = Streaker.configuration.pipeline_keys.values.first
+  #     > box = Streak::Box.all(pipeline_key).first ; nil
+  #     > Streak::FieldValue.all(box.key)
   config.field_keys = {
     my_field: 1043,
   }

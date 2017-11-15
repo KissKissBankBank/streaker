@@ -1,7 +1,4 @@
-require 'streaker/version'
-require 'streaker/configuration'
-
 require 'streak-ruby'
 
-module Streaker
-end
+require 'streaker/version'
+require 'streaker/configuration'

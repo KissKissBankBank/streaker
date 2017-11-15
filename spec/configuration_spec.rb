@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe Streaker::Configuration do
   describe 'Streaker.configure' do
-    # Ensure our examples don't change the test configuration
+    # Cleanup after our examples in order not to change the test configuration
     around do |example|
       configuration = Streaker.configuration.dup
       example.run
@@ -21,6 +21,14 @@ RSpec.describe Streaker::Configuration do
       expect(Streaker.configuration.pipeline_keys).to eq(some: 'pipeline_key')
       expect(Streaker.configuration.stage_keys).to eq(some: 'stage_key')
       expect(Streaker.configuration.field_keys).to eq(some: 'field_key')
+    end
+
+    it 'changes the Streak configuration' do
+      Streaker.configure do |config|
+        config.api_key = 'some_test_api_key'
+      end
+
+      expect(Streak.api_key).to eq('some_test_api_key')
     end
   end
 end
