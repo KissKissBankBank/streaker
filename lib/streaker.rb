@@ -1,4 +1,5 @@
 require 'streaker/version'
+require 'streaker/configuration'
 
 require 'streak-ruby'
 

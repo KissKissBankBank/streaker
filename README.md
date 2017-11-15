@@ -18,6 +18,39 @@ Or install it yourself as:
 
     $ gem install streaker
 
+## Configuration
+
+```rb
+Streak.configure do |config|
+  # To find your API key, check out http://www.streak.com/api/#apikey
+  config.api_key = 'YOUR_API_KEY_HERE'
+
+  # Provide an identifier for the pipeline(s) you with to access.
+  config.pipeline_keys = {
+    my_default_pipeline: 'YOUR_PIPELINE_KEY_HERE',
+  }
+
+  # Provide an identifier for each "Stage" your boxes can go through.
+  # You can find the stage keys by typing inside a console:
+  #
+  #     Streak.api_key = 'YOUR_API_KEY_HERE'
+  #     Streak::Stage.all('YOUR_PIPELINE_KEY_HERE')
+  config.stage_keys = {
+    my_stage: 1042,
+  }
+
+  # Provide an identifier for each custom field your boxes can have.
+  # You can find all the field keys by typing inside a console:
+  #
+  #     Streak.api_key = 'YOUR_API_KEY_HERE'
+  #     box = Streak::Box.all('YOUR_PIPELINE_KEY_HERE').first
+  #     Streak::FieldValue.all(box.key)
+  config.field_keys = {
+    my_field: 1043,
+  }
+end
+```
+
 ## Usage
 
 TODO: Write usage instructions here
