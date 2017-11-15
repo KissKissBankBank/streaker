@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjTrpu2AQw
+    body:
+      encoding: UTF-8
+      string: '{"name":"Some Streak test name"}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.4p301
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '32'
+      Host:
+      - www.streak.com
+      Authorization:
+      - Basic NmQwMzY3ZjE2NWVhNGFhZWFkM2M0MjViNzk5MjBiMDA6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Streak-Request-Id:
+      - 5a0c52d200ff077248cc3ef52f0001737e6d61696c666f6f67616500016461306538356537666600010144
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Cloud-Trace-Context:
+      - dbbad994b2d79d795541259270d9ec13
+      Date:
+      - Wed, 15 Nov 2017 14:44:34 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '2775'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "lastSavedTimestamp": 1510757074605,
+          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAgMHXgQoM",
+          "creatorKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDggeSSCgw",
+          "creationTimestamp": 1510755280166,
+          "lastUpdatedTimestamp": 1510757074605,
+          "lastStageChangeTimestamp": 1510756972849,
+          "totalNumberOfEmails": 0,
+          "totalNumberOfSentEmails": 0,
+          "totalNumberOfReceivedEmails": 0,
+          "name": "Some Streak test name",
+          "assignedToSharingEntries": [
+            {
+              "displayName": "Sunny R",
+              "fullName": "Sunny Ripert",
+              "email": "sunny.ripert@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-VbvNmB97fSY/AAAAAAAAAAI/AAAAAAAAABc/iy_jgJZzQxM/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDggeSSCgw"
+            }
+          ],
+          "creatorSharingEntry": {
+            "displayName": "Sunny R",
+            "fullName": "Sunny Ripert",
+            "email": "sunny.ripert@kisskissbankbank.com",
+            "image": "https://lh3.googleusercontent.com/-VbvNmB97fSY/AAAAAAAAAAI/AAAAAAAAABc/iy_jgJZzQxM/photo.jpg",
+            "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDggeSSCgw"
+          },
+          "followerSharingEntries": [
+            {
+              "displayName": "Sunny R",
+              "fullName": "Sunny Ripert",
+              "email": "sunny.ripert@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-VbvNmB97fSY/AAAAAAAAAAI/AAAAAAAAABc/iy_jgJZzQxM/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDggeSSCgw"
+            }
+          ],
+          "stageKey": "5004",
+          "followerKeys": [
+            "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDggeSSCgw"
+          ],
+          "linkedBoxKeys": [],
+          "emailAddressesAutoExtracted": [],
+          "emailAddressesBlacklist": [],
+          "emailAddresses": [],
+          "taskCompleteCount": 0,
+          "taskIncompleteCount": 0,
+          "taskOverdueCount": 0,
+          "taskAssigneeKeySet": [],
+          "overdueTaskAssigneeKeySet": [],
+          "incompleteTaskAssigneeKeySet": [],
+          "taskAssigneeSharingEntrySet": [],
+          "overdueTaskAssigneeSharingEntrySet": [],
+          "incompleteTaskAssigneeSharingEntrySet": [],
+          "taskTotal": 0,
+          "callLogCount": 0,
+          "meetingNotesCount": 0,
+          "totalCallLogDuration": 0,
+          "totalMeetingNotesDuration": 0,
+          "followerCount": 1,
+          "commentCount": 0,
+          "gmailThreadCount": 0,
+          "fileCount": 0,
+          "fields": {
+            "1001": "New test field value"
+          },
+          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjTrpu2AQw",
+          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjTrpu2AQw",
+          "freshness": 1.0,
+          "violations": []
+        }
+    http_version: 
+  recorded_at: Wed, 15 Nov 2017 14:44:34 GMT
+recorded_with: VCR 3.0.3

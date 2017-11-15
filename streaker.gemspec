@@ -33,11 +33,16 @@ Gem::Specification.new do |spec|
   # API Bindings to Streak
   spec.add_runtime_dependency 'streak-ruby'
 
+  # Record HTTP Interactions
+  spec.add_development_dependency 'vcr'
+
+  # Mock HTTP requests
+  spec.add_development_dependency 'webmock'
+
   # A different console for debugging
   spec.add_development_dependency 'pry'
 
   spec.add_development_dependency 'bundler', '~> 1.15'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'vcr'
 end

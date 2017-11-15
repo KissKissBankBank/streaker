@@ -63,7 +63,26 @@ end
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a box:
+
+```rb
+box = Box.create(
+  pipeline: :my_default_pipeline,
+  name: 'Some box name',
+  my_field: 'Some field value',
+  …
+)
+```
+
+Update a box:
+
+```rb
+box = Box.new('a_box_key')
+box.update(
+  my_field: 'A new field value',
+  …
+)
+```
 
 ## Development
 

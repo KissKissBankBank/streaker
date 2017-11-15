@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjTrpu2AQw/fields/1001
+    body:
+      encoding: UTF-8
+      string: '{"value":"New test field value"}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.6.0 x86_64) ruby/2.3.4p301
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '32'
+      Host:
+      - www.streak.com
+      Authorization:
+      - Basic NmQwMzY3ZjE2NWVhNGFhZWFkM2M0MjViNzk5MjBiMDA6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Streak-Request-Id:
+      - 5a0c4fd000ff015db6ddd8ce0b0001737e6d61696c666f6f67616500016461306538356537666600010140
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Cloud-Trace-Context:
+      - 5aeeec82f194d8d906204a9f36458ec8
+      Date:
+      - Wed, 15 Nov 2017 14:31:44 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '54'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "key": "1001",
+          "value": "New test field value"
+        }
+    http_version: 
+  recorded_at: Wed, 15 Nov 2017 14:31:44 GMT
+recorded_with: VCR 3.0.3
