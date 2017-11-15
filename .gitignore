@@ -10,3 +10,6 @@
 
 # rspec failure tracking
 .rspec_status
+
+# custom credentials for specs and local console
+credentials.rb
