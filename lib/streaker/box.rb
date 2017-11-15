@@ -43,14 +43,16 @@ module Streaker
       box
     end
 
-    private
-
     def self.pipeline_key(pipeline)
       Streaker.configuration.pipeline_keys.fetch(pipeline)
     rescue KeyError
       raise Error,
             "No such pipeline #{pipeline.inspect} in the configuration"
     end
+
+    private_class_method :pipeline_key
+
+    private
 
     def stage_key(stage)
       Streaker.configuration.stage_keys.fetch(stage)

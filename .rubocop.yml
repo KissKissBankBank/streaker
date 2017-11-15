@@ -1,0 +1,9 @@
+Style/AsciiComments:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Style/TrailingCommaInArguments:
+  Enabled: false

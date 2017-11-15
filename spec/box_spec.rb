@@ -30,7 +30,7 @@ RSpec.describe Streaker::Box do
 
     it 'changes name' do
       VCR.use_cassette('box_name_update') do
-        expect(box.update(name: "Some Streak test name")).to be_truthy
+        expect(box.update(name: 'Some Streak test name')).to be_truthy
       end
     end
   end
