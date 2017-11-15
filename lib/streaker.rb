@@ -1,5 +1,6 @@
-require "streaker/version"
+require 'streaker/version'
+
+require 'streak-ruby'
 
 module Streaker
-  # Your code goes here...
 end
