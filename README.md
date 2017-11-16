@@ -2,6 +2,8 @@
 
 Ruby gem to access Streak's API.
 
+![Streaker on Ninja Warrior](https://media.giphy.com/media/LMfZEPTKKRgJy/giphy.gif)
+
 ## Installation
 
 Add this line to your application's Gemfile:
