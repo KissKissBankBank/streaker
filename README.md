@@ -1,4 +1,4 @@
-# Streaker
+# Streaker [![CircleCI](https://circleci.com/gh/KissKissBankBank/streaker.svg?style=svg)](https://circleci.com/gh/KissKissBankBank/streaker)
 
 Ruby gem to access Streak's API.
 
