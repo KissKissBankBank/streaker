@@ -7,3 +7,6 @@ Metrics/BlockLength:
 
 Style/TrailingCommaInArguments:
   Enabled: false
+
+Style/TrailingCommaInLiteral:
+  Enabled: false

@@ -31,19 +31,22 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # API Bindings to Streak
-  spec.add_runtime_dependency 'streak-ruby', '>= 0.0.2', '< 1'
+  spec.add_dependency 'streak-ruby', '>= 0.0.2', '< 1'
 
   # Record HTTP Interactions
   spec.add_development_dependency 'vcr', '~> 3.0'
 
   # Mock HTTP requests
-  spec.add_development_dependency 'webmock', '~> 3.0'
+  spec.add_development_dependency 'webmock', '~> 3.1'
 
   # A different console for debugging
-  spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_development_dependency 'pry', '~> 0.11'
 
-  spec.add_development_dependency 'bundler', '~> 1.15'
+  spec.add_development_dependency 'bundler', '>= 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
+
+  # Ruby linter
+  spec.add_development_dependency 'rubocop', '~> 0.51.0'
 end
 # rubocop:enable Metrics/BlockLength
