@@ -8,41 +8,70 @@ Ruby gem to access Streak's API.
 
 Add this line to your application's Gemfile:
 
-```ruby
+```rb
 gem 'streaker'
 ```
 
 And then execute:
 
-    $ bundle
+```sh
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install streaker
+```sh
+$ gem install streaker
+```
+
+## Usage
+
+Create a box:
+
+```rb
+box = Streaker::Box.create(
+  name: 'Some box name',
+  stage: :my_stage,
+  my_field: 'Some field value',
+  …
+)
+box.key # => your new box's key
+```
+
+Update a box:
+
+```rb
+box = Streaker::Box.new('a_box_key')
+box.update(
+  my_field: 'A new field value',
+  …
+)
+```
 
 ## Configuration
 
+Configure Streaker:
+
 ```rb
-Streak.configure do |config|
+Streaker.configure do |config|
   # To find your API key, check out http://www.streak.com/api/#apikey
   config.api_key = 'YOUR_API_KEY_HERE'
 
-  # Provide an identifier for the pipeline(s) you with to access.
-  # You can find the pipeline keys keys by adding your api key, then typing
+  # Provide an identifier for the pipeline(s) you want to access.
+  # You can find the pipeline keys keys by configuring your api key, then typing
   # inside a console:
-  #     $ bin/console
-  #     > Streak::Pipeline
+  #     > Streak::Pipeline.all.map { |p| [p.key, p.name] }.to_h
   config.pipeline_keys = {
-    my_default_pipeline: 'YOUR_PIPELINE_KEY_HERE',
+    default: 'YOUR_PIPELINE_KEY_HERE',
   }
 
   # Provide an identifier for each "Stage" your boxes can go through.
-  # You can find the stage keys by adding a pipeline key, then typing
+  # You can find the stage keys by configuring a pipeline key, then typing
   # inside a console:
   #
-  #     $ bin/console
-  #     > pipeline = Streaker.configuration.pipelines.values.first
-  #     > stages = Streak::Stage.all(pipeline).instance_variable_get('@values')
+  #     > pipeline_key = Streaker.configuration.pipeline_keys.values.first
+  #     > stages = Streak::Stage.all(pipeline_key)
+  #     > stages = stages.instance_variable_get('@values')
   #     > values = stages.map { |value| value.instance_variable_get('@values') }
   #     > values.map { |value| [value[:key].to_i, value[:name]] }.to_h
   config.stage_keys = {
@@ -50,7 +79,7 @@ Streak.configure do |config|
   }
 
   # Provide an identifier for each custom field your boxes can have.
-  # You can find all the field keys by adding a pipeline key, then typing
+  # You can find all the field keys by configuring a pipeline key, then typing
   # inside a console:
   #
   #     $ bin/console
@@ -61,29 +90,6 @@ Streak.configure do |config|
     my_field: 1043,
   }
 end
-```
-
-## Usage
-
-Create a box:
-
-```rb
-box = Box.create(
-  pipeline: :my_default_pipeline,
-  name: 'Some box name',
-  my_field: 'Some field value',
-  …
-)
-```
-
-Update a box:
-
-```rb
-box = Box.new('a_box_key')
-box.update(
-  my_field: 'A new field value',
-  …
-)
 ```
 
 ## Development
