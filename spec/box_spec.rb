@@ -9,28 +9,45 @@ RSpec.describe Streaker::Box do
   end
 
   describe '#update' do
-    let(:key) do
-      'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb2' \
-      '0MCxIEQ2FzZRjTrpu2AQw'
-    end
-
     let(:box) { Streaker::Box.new(key) }
 
-    it 'updates fields' do
-      VCR.use_cassette('box_one_field_update') do
-        expect(box.update(fake_field: 'New test field value')).to be_truthy
+    context 'the key is valid' do
+      let(:key) do
+        'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5' \
+        'jb20MCxIEQ2FzZRihsMPGAQw'
+      end
+
+      it 'updates fields' do
+        VCR.use_cassette('box_one_field_update') do
+          expect(box.update(fake_field: 'New test field value')).to be_truthy
+        end
+      end
+
+      it 'changes stage' do
+        VCR.use_cassette('box_stage_update') do
+          expect(box.update(stage: :fake_stage)).to be_truthy
+        end
+      end
+
+      it 'changes name' do
+        VCR.use_cassette('box_name_update') do
+          expect(box.update(name: 'Some Streak test name')).to be_truthy
+        end
       end
     end
 
-    it 'changes stage' do
-      VCR.use_cassette('box_stage_update') do
-        expect(box.update(stage: :fake_stage)).to be_truthy
+    context 'the key is invalid' do
+      let(:key) do
+        'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFu' \
+        'ay5jb20MCxIEQ2FzZRjRrNe-AQw'
       end
-    end
 
-    it 'changes name' do
-      VCR.use_cassette('box_name_update') do
-        expect(box.update(name: 'Some Streak test name')).to be_truthy
+      it 'raises a BoxNotFoundError if the box has been deleted' do
+        VCR.use_cassette('box_not_found_error') do
+          expect{
+            box.update(fake_field: 'new_test_value')
+          }.to raise_error(Streaker::BoxNotFoundError)
+        end
       end
     end
   end

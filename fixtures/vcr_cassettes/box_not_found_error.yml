@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRrNe-AQw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.3.4p301
+      Host:
+      - www.streak.com
+      Authorization:
+      - Basic Y2Q3NTUzYjRjMjRhNGI2NGFkOGZlZDJmNjE2MTFjOTE6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Streak-Request-Id:
+      - 5a267b6500ff0e70696148195a0001737e6d61696c666f6f6761650001346636396535373566300001015e
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Cloud-Trace-Context:
+      - f199207bfbe88fa6b46ef57d091cc524;o=3
+      Date:
+      - Tue, 05 Dec 2017 10:56:37 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '170'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "success": false,
+          "details": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRrNe-AQw",
+          "error": "Entity not found with key"
+        }
+    http_version: 
+  recorded_at: Tue, 05 Dec 2017 10:56:38 GMT
+recorded_with: VCR 3.0.3

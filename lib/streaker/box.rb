@@ -21,6 +21,8 @@ module Streaker
     #
     # You can also give a `stage: :stage` or
     def update(attributes)
+      verify_if_box_exists
+
       attributes.each do |attr, value|
         update_attribute(attr, value)
       end
@@ -53,6 +55,16 @@ module Streaker
     private_class_method :pipeline_key
 
     private
+
+    def verify_if_box_exists
+      Streak::Box.find(key)
+    rescue Streak::InvalidRequestError => e
+      if /Entity not found with key/ =~ e.message
+        raise Streaker::BoxNotFoundError, "Entity not found with key #{key}"
+      else
+        raise e
+      end
+    end
 
     def stage_key(stage)
       Streaker.configuration.stage_keys.fetch(stage)
