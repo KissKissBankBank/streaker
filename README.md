@@ -60,6 +60,7 @@ Streaker.configure do |config|
   # Provide an identifier for the pipeline(s) you want to access.
   # You can find the pipeline keys keys by configuring your api key, then typing
   # inside a console:
+  #
   #     > Streak::Pipeline.all.map { |p| [p.key, p.name] }.to_h
   config.pipeline_keys = {
     default: 'YOUR_PIPELINE_KEY_HERE',
@@ -82,7 +83,6 @@ Streaker.configure do |config|
   # You can find all the field keys by configuring a pipeline key, then typing
   # inside a console:
   #
-  #     $ bin/console
   #     > pipeline_key = Streaker.configuration.pipeline_keys.values.first
   #     > box = Streak::Box.all(pipeline_key).first ; nil
   #     > Streak::FieldValue.all(box.key)
