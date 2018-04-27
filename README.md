@@ -4,6 +4,9 @@ Ruby gem to access Streak's API.
 
 ![Streaker on Ninja Warrior](https://media.giphy.com/media/LMfZEPTKKRgJy/giphy.gif)
 
+This gem acts as a wrapper around the `streak-ruby` gem to provide a configuration
+for the box keys and a shorter syntax.
+
 ## Installation
 
 Add this line to your application's Gemfile:
