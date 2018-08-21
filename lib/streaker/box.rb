@@ -22,10 +22,9 @@ module Streaker
     # You can also give a `stage: :stage` or
     def update(attributes)
       verify_if_box_exists
+      api_result = api.update_box(key, attributes)
 
-      attributes.each do |attr, value|
-        update_attribute(attr, value)
-      end
+      raise Streaker::Box::Error, api_result['error'] if api_result['error']
 
       true
     end
@@ -38,11 +37,19 @@ module Streaker
     #       some_field_key: 'Some field value',
     #       …
     #     )
-    def self.create(name:, pipeline: :default, **attributes)
-      api_result = Streak::Box.create(pipeline_key(pipeline), name: name)
-      box = new(api_result.key)
-      box.update(attributes)
-      box
+    def self.create(name:, pipeline: :default, assigned_to: [], **attributes)
+      api = Streaker::API.new
+      api_result = api.create_box(
+        pipeline_key(pipeline),
+        name: name,
+        assigned_to: assigned_to
+      )
+
+      raise Streaker::Box::Error, api_result['error'] if api_result['error']
+
+      api.update_box(api_result['key'], name: name, **attributes)
+
+      new(api_result['key'])
     end
 
     def self.pipeline_key(pipeline)
@@ -57,13 +64,15 @@ module Streaker
     private
 
     def verify_if_box_exists
-      Streak::Box.find(key)
-    rescue Streak::InvalidRequestError => e
-      if /Entity not found with key/ =~ e.message
-        raise Streaker::BoxNotFoundError, "Entity not found with key #{key}"
-      else
-        raise e
+      result = api.find_box(key)
+
+      return unless result['error']
+
+      if /Entity not found with key/ =~ result['error']
+        raise Streaker::BoxNotFoundError, result['error']
       end
+
+      raise Streaker::Box::Error, result['error']
     end
 
     def stage_key(stage)
@@ -80,15 +89,8 @@ module Streaker
             "No such field #{field.inspect} in the configuration"
     end
 
-    def update_attribute(attr, value)
-      case attr
-      when :stage
-        Streak::Box.update(key, stageKey: stage_key(value))
-      when :name
-        Streak::Box.update(key, name: value)
-      else
-        Streak::FieldValue.update(key, field_key(attr), value: value)
-      end
+    def api
+      Streaker::API.new
     end
   end
 end

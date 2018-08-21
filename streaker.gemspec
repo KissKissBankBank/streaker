@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Sunny Ripert', 'William Pollet']
   spec.email = %w[
     sunny.ripert@kisskissbankbank.com
-    william.pollet@KissKissBankBank.com
+    william.pollet@kisskissbankbank.com
   ]
 
   spec.summary = 'Access the Streak API'
@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ['lib']
 
-  # API Bindings to Streak
-  spec.add_dependency 'streak-ruby', '>= 0.0.2', '< 1'
+  # API calls
+  spec.add_development_dependency 'http', '~> 3.3.0'
 
   # Record HTTP Interactions
   spec.add_development_dependency 'vcr', '~> 3.0'

@@ -22,13 +22,5 @@ RSpec.describe Streaker::Configuration do
       expect(Streaker.configuration.stage_keys).to eq(some: 'stage_key')
       expect(Streaker.configuration.field_keys).to eq(some: 'field_key')
     end
-
-    it 'changes the Streak configuration' do
-      Streaker.configure do |config|
-        config.api_key = 'some_test_api_key'
-      end
-
-      expect(Streak.api_key).to eq('some_test_api_key')
-    end
   end
 end

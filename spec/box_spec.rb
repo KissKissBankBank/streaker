@@ -13,8 +13,8 @@ RSpec.describe Streaker::Box do
 
     context 'the key is valid' do
       let(:key) do
-        'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5' \
-        'jb20MCxIEQ2FzZRihsMPGAQw'
+        'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay' \
+        '5jb20MCxIEQ2FzZRjRkeSNAww'
       end
 
       it 'updates fields' do
@@ -38,15 +38,15 @@ RSpec.describe Streaker::Box do
 
     context 'the key is invalid' do
       let(:key) do
-        'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFu' \
-        'ay5jb20MCxIEQ2FzZRjRrNe-AQw'
+        'agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5' \
+        'jb20MCxIEQ2FzZRihsMPGAQw'
       end
 
-      it 'raises a BoxNotFoundError if the box has been deleted' do
+      it 'raises an Streaker::Box::Error if the box has been deleted' do
         VCR.use_cassette('box_not_found_error') do
-          expect{
+          expect do
             box.update(fake_field: 'new_test_value')
-          }.to raise_error(Streaker::BoxNotFoundError)
+          end.to raise_error(Streaker::BoxNotFoundError)
         end
       end
     end

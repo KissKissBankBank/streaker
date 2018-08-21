@@ -13,8 +13,8 @@ Streaker.configure do |config|
 
   # Real pipeline key to help with VCR's real requests
   config.pipeline_keys[:default] =
-    'agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20M' \
-    'CxIIV29ya2Zsb3cYgICAgMHXgQoM'
+    'agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5r'\
+    'YmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM'
 
   config.stage_keys = { fake_stage: 5004 }
   config.field_keys = { fake_field: 1001 }

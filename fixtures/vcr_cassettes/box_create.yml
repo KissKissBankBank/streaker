@@ -2,50 +2,52 @@
 http_interactions:
 - request:
     method: put
-    uri: https://www.streak.com/api/v1/pipelines/agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAgMHXgQoM/boxes
+    uri: https://www.streak.com/api/v1/pipelines/agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM/boxes
     body:
       encoding: UTF-8
-      string: name=Streak%20test%20box%20name
+      string: name=Streak+test+box+name
     headers:
       Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.3.4p301
-      Content-Length:
-      - '31'
+      - application/json
+      Authorization:
+      - Basic TESTAUTH
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
       Host:
       - www.streak.com
-      Authorization:
-      - Basic Y2Q3NTUzYjRjMjRhNGI2NGFkOGZlZDJmNjE2MTFjOTE6
+      User-Agent:
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Streak-Request-Id:
-      - 5a21909500ff0b71cc2bc1f5e50001737e6d61696c666f6f67616500013865336461636263613300010145
+      - 5b6abea100ff00ff8556456407b50001737e6d61696c666f6f6761650001376530356661643330320001011e
       Content-Type:
       - application/json;charset=utf-8
       X-Cloud-Trace-Context:
-      - c7fb79daeb659935b8b8563403f77f43
+      - 54e3b64186bcadef98c4276684b779da
       Date:
-      - Fri, 01 Dec 2017 17:25:41 GMT
+      - Wed, 08 Aug 2018 09:57:53 GMT
       Server:
       - Google Frontend
       Content-Length:
       - '2706'
+      Connection:
+      - close
     body:
       encoding: UTF-8
       string: |-
         {
-          "lastSavedTimestamp": 1512149141776,
-          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAgMHXgQoM",
+          "lastSavedTimestamp": 1533722273096,
+          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM",
           "creatorKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw",
-          "creationTimestamp": 1512149141769,
-          "lastUpdatedTimestamp": 1512149141769,
-          "lastStageChangeTimestamp": 1512149141769,
+          "creationTimestamp": 1533722273060,
+          "lastUpdatedTimestamp": 1533722273060,
+          "lastStageChangeTimestamp": 1533722273060,
           "totalNumberOfEmails": 0,
           "totalNumberOfSentEmails": 0,
           "totalNumberOfReceivedEmails": 0,
@@ -75,7 +77,7 @@ http_interactions:
               "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
             }
           ],
-          "stageKey": "5017",
+          "stageKey": "5001",
           "followerKeys": [
             "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
           ],
@@ -102,57 +104,62 @@ http_interactions:
           "gmailThreadCount": 0,
           "fileCount": 0,
           "fields": {},
-          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjSm5jHAQw",
-          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjSm5jHAQw",
+          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihgpiOAww",
+          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihgpiOAww",
           "freshness": 1.0,
           "violations": []
         }
-    http_version: 
-  recorded_at: Fri, 01 Dec 2017 17:25:50 GMT
+    http_version:
+  recorded_at: Wed, 08 Aug 2018 09:57:53 GMT
 - request:
-    method: get
-    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjSm5jHAQw
+    method: post
+    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihgpiOAww
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"name":"Streak test box name","fields":{"1001":"Streak test field
+        value"}}'
     headers:
       Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.3.4p301
+      - application/json
+      Authorization:
+      - Basic TESTAUTH
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
       Host:
       - www.streak.com
-      Authorization:
-      - Basic Y2Q3NTUzYjRjMjRhNGI2NGFkOGZlZDJmNjE2MTFjOTE6
+      User-Agent:
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Streak-Request-Id:
-      - 5a21909600ff04bff3ca54a2d50001737e6d61696c666f6f6761650001386533646163626361330001015d
+      - 5b6abea100ff0878a59ed5a8970001737e6d61696c666f6f67616500013765303566616433303200010113
       Content-Type:
       - application/json;charset=utf-8
       X-Cloud-Trace-Context:
-      - e6bc1b4a01a60fb3c39c47c44999a8e7
+      - 327e34328d746f28f563e681d04d8767
       Date:
-      - Fri, 01 Dec 2017 17:25:42 GMT
+      - Wed, 08 Aug 2018 09:57:53 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '2686'
+      - '2747'
+      Connection:
+      - close
     body:
       encoding: UTF-8
       string: |-
         {
-          "lastSavedTimestamp": 1512149141776,
-          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAgMHXgQoM",
+          "lastSavedTimestamp": 1533722273630,
+          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM",
           "creatorKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw",
-          "creationTimestamp": 1512149141769,
-          "lastUpdatedTimestamp": 1512149141769,
-          "lastStageChangeTimestamp": 1512149141769,
+          "creationTimestamp": 1533722273060,
+          "lastUpdatedTimestamp": 1533722273630,
+          "lastStageChangeTimestamp": 1533722273060,
           "totalNumberOfEmails": 0,
           "totalNumberOfSentEmails": 0,
           "totalNumberOfReceivedEmails": 0,
@@ -182,7 +189,7 @@ http_interactions:
               "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
             }
           ],
-          "stageKey": "5017",
+          "stageKey": "5001",
           "followerKeys": [
             "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
           ],
@@ -208,58 +215,14 @@ http_interactions:
           "commentCount": 0,
           "gmailThreadCount": 0,
           "fileCount": 0,
-          "fields": {},
-          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjSm5jHAQw",
-          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjSm5jHAQw",
-          "freshness": 1.0
+          "fields": {
+            "1001": "Streak test field value"
+          },
+          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihgpiOAww",
+          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihgpiOAww",
+          "freshness": 1.0,
+          "violations": []
         }
-    http_version: 
-  recorded_at: Fri, 01 Dec 2017 17:25:50 GMT
-- request:
-    method: post
-    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjSm5jHAQw/fields/1001
-    body:
-      encoding: UTF-8
-      string: '{"value":"Streak test field value"}'
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.3.4p301
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '35'
-      Host:
-      - www.streak.com
-      Authorization:
-      - Basic Y2Q3NTUzYjRjMjRhNGI2NGFkOGZlZDJmNjE2MTFjOTE6
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Streak-Request-Id:
-      - 5a21909600ff07d21234e04e700001737e6d61696c666f6f67616500013865336461636263613300010133
-      Content-Type:
-      - application/json;charset=utf-8
-      X-Cloud-Trace-Context:
-      - e3fe3313f13cb819d1d91e2f02170d16;o=3
-      Date:
-      - Fri, 01 Dec 2017 17:25:42 GMT
-      Server:
-      - Google Frontend
-      Content-Length:
-      - '57'
-    body:
-      encoding: UTF-8
-      string: |-
-        {
-          "key": "1001",
-          "value": "Streak test field value"
-        }
-    http_version: 
-  recorded_at: Fri, 01 Dec 2017 17:25:51 GMT
+    http_version:
+  recorded_at: Wed, 08 Aug 2018 09:57:53 GMT
 recorded_with: VCR 3.0.3

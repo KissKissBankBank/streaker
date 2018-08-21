@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: get
+    method: post
     uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihsMPGAQw
     body:
       encoding: UTF-8
-      string: ''
+      string: '{"name":"new_test_value","fields":{}}'
     headers:
       Accept:
       - application/json
@@ -13,6 +13,8 @@ http_interactions:
       - Basic TESTAUTH
       Connection:
       - close
+      Content-Type:
+      - application/json; charset=UTF-8
       Host:
       - www.streak.com
       User-Agent:
@@ -23,17 +25,17 @@ http_interactions:
       message: Not Found
     headers:
       X-Streak-Request-Id:
-      - 5b6ab9c900ff085b70c65120110001737e6d61696c666f6f67616500013765303566616433303200010112
+      - 5b6ab9c600ff09d9c278cb6cda0001737e6d61696c666f6f67616500013765303566616433303200010119
       Content-Type:
       - application/json;charset=utf-8
       X-Cloud-Trace-Context:
-      - 067e8705a7bbef8f851081d54046c690
+      - b83a7ed9ac15a4947533fe9492497598
       Date:
-      - Wed, 08 Aug 2018 09:37:13 GMT
+      - Wed, 08 Aug 2018 09:37:10 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '170'
+      - '67'
       Connection:
       - close
     body:
@@ -41,9 +43,8 @@ http_interactions:
       string: |-
         {
           "success": false,
-          "details": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihsMPGAQw",
-          "error": "Entity not found with key"
+          "error": "existing entity does not exist"
         }
     http_version:
-  recorded_at: Wed, 08 Aug 2018 09:37:13 GMT
+  recorded_at: Wed, 08 Aug 2018 09:37:10 GMT
 recorded_with: VCR 3.0.3

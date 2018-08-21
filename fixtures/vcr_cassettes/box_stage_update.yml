@@ -2,222 +2,227 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihsMPGAQw
+    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRkeSNAww
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.3.4p301
+      - application/json
+      Authorization:
+      - Basic TESTAUTH
+      Connection:
+      - close
       Host:
       - www.streak.com
-      Authorization:
-      - Basic Y2Q3NTUzYjRjMjRhNGI2NGFkOGZlZDJmNjE2MTFjOTE6
+      User-Agent:
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Streak-Request-Id:
-      - 5a21907800ff054541dbdccc500001737e6d61696c666f6f67616500013865336461636263613300010160
+      - 5b6ac3a800ff00ff271895adf83d0001737e6d61696c666f6f67616500013765303566616433303200010112
       Content-Type:
       - application/json;charset=utf-8
       X-Cloud-Trace-Context:
-      - 3d78adc1717a631a0886de5404581a7a
+      - 8ca410ed1dfce7ca6d6c69f0ec03c9d6
       Date:
-      - Fri, 01 Dec 2017 17:25:12 GMT
+      - Wed, 08 Aug 2018 10:19:20 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '3070'
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJsYXN0U2F2ZWRUaW1lc3RhbXAiOiAxNTEyMTQ4ODE5OTQ2LAogICJw
-        aXBlbGluZUtleSI6ICJhZ3h6Zm0xaGFXeG1iMjluWVdWeU93c1NERTl5WjJG
-        dWFYcGhkR2x2YmlJVWEybHpjMnRwYzNOaVlXNXJZbUZ1YXk1amIyME1DeElJ
-        VjI5eWEyWnNiM2NZZ0lDQTROSHFtZ29NIiwKICAiY3JlYXRvcktleSI6ICJh
-        Z3h6Zm0xaGFXeG1iMjluWVdWeU53c1NERTl5WjJGdWFYcGhkR2x2YmlJVWEy
-        bHpjMnRwYzNOaVlXNXJZbUZ1YXk1amIyME1DeElFVlhObGNoaUFnSURnNGUt
-        SkNndyIsCiAgImNyZWF0aW9uVGltZXN0YW1wIjogMTUxMjA0MDc5NDMwOCwK
-        ICAibGFzdFVwZGF0ZWRUaW1lc3RhbXAiOiAxNTEyMTQ4ODE5OTQ2LAogICJs
-        YXN0U3RhZ2VDaGFuZ2VUaW1lc3RhbXAiOiAxNTEyMDQxMDE1NjY4LAogICJ0
-        b3RhbE51bWJlck9mRW1haWxzIjogMCwKICAidG90YWxOdW1iZXJPZlNlbnRF
-        bWFpbHMiOiAwLAogICJ0b3RhbE51bWJlck9mUmVjZWl2ZWRFbWFpbHMiOiAw
-        LAogICJuYW1lIjogIm1hcnN1cGlsYW1pIiwKICAiYXNzaWduZWRUb1NoYXJp
-        bmdFbnRyaWVzIjogWwogICAgewogICAgICAiZGlzcGxheU5hbWUiOiAiS2lz
-        cyBCIiwKICAgICAgImZ1bGxOYW1lIjogIktpc3MgQm90IiwKICAgICAgImVt
-        YWlsIjogImtpc3Nib3RAa2lzc2tpc3NiYW5rYmFuay5jb20iLAogICAgICAi
-        aW1hZ2UiOiAiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy1r
-        YU00VkRYVzBVUS9BQUFBQUFBQUFBSS9BQUFBQUFBQUFCby9JT1RmbkQ3bGFN
-        cy9waG90by5qcGciLAogICAgICAidXNlcktleSI6ICJhZ3h6Zm0xaGFXeG1i
-        MjluWVdWeU53c1NERTl5WjJGdWFYcGhkR2x2YmlJVWEybHpjMnRwYzNOaVlX
-        NXJZbUZ1YXk1amIyME1DeElFVlhObGNoaUFnSURnNGUtSkNndyIKICAgIH0K
-        ICBdLAogICJjcmVhdG9yU2hhcmluZ0VudHJ5IjogewogICAgImRpc3BsYXlO
-        YW1lIjogIktpc3MgQiIsCiAgICAiZnVsbE5hbWUiOiAiS2lzcyBCb3QiLAog
-        ICAgImVtYWlsIjogImtpc3Nib3RAa2lzc2tpc3NiYW5rYmFuay5jb20iLAog
-        ICAgImltYWdlIjogImh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNv
-        bS8ta2FNNFZEWFcwVVEvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQm8vSU9UZm5E
-        N2xhTXMvcGhvdG8uanBnIiwKICAgICJ1c2VyS2V5IjogImFneHpmbTFoYVd4
-        bWIyOW5ZV1Z5TndzU0RFOXlaMkZ1YVhwaGRHbHZiaUlVYTJsemMydHBjM05p
-        WVc1clltRnVheTVqYjIwTUN4SUVWWE5sY2hpQWdJRGc0ZS1KQ2d3IgogIH0s
-        CiAgImZvbGxvd2VyU2hhcmluZ0VudHJpZXMiOiBbCiAgICB7CiAgICAgICJk
-        aXNwbGF5TmFtZSI6ICJLaXNzIEIiLAogICAgICAiZnVsbE5hbWUiOiAiS2lz
-        cyBCb3QiLAogICAgICAiZW1haWwiOiAia2lzc2JvdEBraXNza2lzc2Jhbmti
-        YW5rLmNvbSIsCiAgICAgICJpbWFnZSI6ICJodHRwczovL2xoMy5nb29nbGV1
-        c2VyY29udGVudC5jb20vLWthTTRWRFhXMFVRL0FBQUFBQUFBQUFJL0FBQUFB
-        QUFBQUJvL0lPVGZuRDdsYU1zL3Bob3RvLmpwZyIsCiAgICAgICJ1c2VyS2V5
-        IjogImFneHpmbTFoYVd4bWIyOW5ZV1Z5TndzU0RFOXlaMkZ1YVhwaGRHbHZi
-        aUlVYTJsemMydHBjM05pWVc1clltRnVheTVqYjIwTUN4SUVWWE5sY2hpQWdJ
-        RGc0ZS1KQ2d3IgogICAgfQogIF0sCiAgInN0YWdlS2V5IjogIjUwMTgiLAog
-        ICJmb2xsb3dlcktleXMiOiBbCiAgICAiYWd4emZtMWhhV3htYjI5bllXVnlO
-        d3NTREU5eVoyRnVhWHBoZEdsdmJpSVVhMmx6YzJ0cGMzTmlZVzVyWW1GdWF5
-        NWpiMjBNQ3hJRVZYTmxjaGlBZ0lEZzRlLUpDZ3ciCiAgXSwKICAibGlua2Vk
-        Qm94S2V5cyI6IFtdLAogICJlbWFpbEFkZHJlc3Nlc0F1dG9FeHRyYWN0ZWQi
-        OiBbXSwKICAiZW1haWxBZGRyZXNzZXNCbGFja2xpc3QiOiBbXSwKICAiZW1h
-        aWxBZGRyZXNzZXMiOiBbXSwKICAidGFza0NvbXBsZXRlQ291bnQiOiAwLAog
-        ICJ0YXNrSW5jb21wbGV0ZUNvdW50IjogMCwKICAidGFza092ZXJkdWVDb3Vu
-        dCI6IDAsCiAgInRhc2tBc3NpZ25lZUtleVNldCI6IFtdLAogICJvdmVyZHVl
-        VGFza0Fzc2lnbmVlS2V5U2V0IjogW10sCiAgImluY29tcGxldGVUYXNrQXNz
-        aWduZWVLZXlTZXQiOiBbXSwKICAidGFza0Fzc2lnbmVlU2hhcmluZ0VudHJ5
-        U2V0IjogW10sCiAgIm92ZXJkdWVUYXNrQXNzaWduZWVTaGFyaW5nRW50cnlT
-        ZXQiOiBbXSwKICAiaW5jb21wbGV0ZVRhc2tBc3NpZ25lZVNoYXJpbmdFbnRy
-        eVNldCI6IFtdLAogICJ0YXNrVG90YWwiOiAwLAogICJjYWxsTG9nQ291bnQi
-        OiAwLAogICJtZWV0aW5nTm90ZXNDb3VudCI6IDAsCiAgInRvdGFsQ2FsbExv
-        Z0R1cmF0aW9uIjogMCwKICAidG90YWxNZWV0aW5nTm90ZXNEdXJhdGlvbiI6
-        IDAsCiAgImZvbGxvd2VyQ291bnQiOiAxLAogICJjb21tZW50Q291bnQiOiAw
-        LAogICJnbWFpbFRocmVhZENvdW50IjogMCwKICAiZmlsZUNvdW50IjogMCwK
-        ICAiZmllbGRzIjogewogICAgIjEwMjIiOiAiQ2hhcmxlcyBkZSBHYXVsbGUg
-        QWlycG9ydCAoQ0RHKSwgOTU3MDAgUm9pc3N5LWVuLUZyYW5jZSwgRnJhbmNl
-        IiwKICAgICIxMDIxIjogIjkwMDIiLAogICAgIjEwMjAiOiAibXNkbGZrc2Rm
-        bGtqIiwKICAgICIxMDEzIjogIjMxIiwKICAgICIxMDA3IjogIndpbGxpYW0u
-        cG9sbGV0QGtpc3NraXNzYmFua2JhbmsuY29tIiwKICAgICIxMDI3IjogIkF2
-        ZW50dXJlIGV0IHNwb3J0LCBBcnQgbnVtw6lyaXF1ZSIsCiAgICAiMTAwNCI6
-        ICIwNjg4NzA4MDM5IiwKICAgICIxMDI2IjogInJld2FyZF9iYXNlZCIsCiAg
-        ICAiMTAwMyI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvZnIvcHJvamVjdHMv
-        c2Rsa2ZqIiwKICAgICIxMDAxIjogIk5ldyB0ZXN0IGZpZWxkIHZhbHVlIgog
-        IH0sCiAgImJveEtleSI6ICJhZ3h6Zm0xaGFXeG1iMjluWVdWeU5Bc1NERTl5
-        WjJGdWFYcGhkR2x2YmlJVWEybHpjMnRwYzNOaVlXNXJZbUZ1YXk1amIyME1D
-        eElFUTJGelpSaWhzTVBHQVF3IiwKICAia2V5IjogImFneHpmbTFoYVd4bWIy
-        OW5ZV1Z5TkFzU0RFOXlaMkZ1YVhwaGRHbHZiaUlVYTJsemMydHBjM05pWVc1
-        clltRnVheTVqYjIwTUN4SUVRMkZ6WlJpaHNNUEdBUXciLAogICJmcmVzaG5l
-        c3MiOiAxLjAKfQ==
-    http_version: 
-  recorded_at: Fri, 01 Dec 2017 17:25:20 GMT
-- request:
-    method: post
-    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRihsMPGAQw
+      - '2761'
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"stageKey":5004}'
+      string: |-
+        {
+          "lastSavedTimestamp": 1533722272687,
+          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM",
+          "creatorKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw",
+          "creationTimestamp": 1533648680760,
+          "lastUpdatedTimestamp": 1533722272686,
+          "lastStageChangeTimestamp": 1533718475528,
+          "totalNumberOfEmails": 0,
+          "totalNumberOfSentEmails": 0,
+          "totalNumberOfReceivedEmails": 0,
+          "name": "Some Streak test name",
+          "assignedToSharingEntries": [
+            {
+              "displayName": "Kiss B",
+              "fullName": "Kiss Bot",
+              "email": "kissbot@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+            }
+          ],
+          "creatorSharingEntry": {
+            "displayName": "Kiss B",
+            "fullName": "Kiss Bot",
+            "email": "kissbot@kisskissbankbank.com",
+            "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+            "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+          },
+          "followerSharingEntries": [
+            {
+              "displayName": "Kiss B",
+              "fullName": "Kiss Bot",
+              "email": "kissbot@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+            }
+          ],
+          "stageKey": "5004",
+          "followerKeys": [
+            "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+          ],
+          "linkedBoxKeys": [],
+          "emailAddressesAutoExtracted": [],
+          "emailAddressesBlacklist": [],
+          "emailAddresses": [],
+          "taskCompleteCount": 0,
+          "taskIncompleteCount": 0,
+          "taskOverdueCount": 0,
+          "taskAssigneeKeySet": [],
+          "overdueTaskAssigneeKeySet": [],
+          "incompleteTaskAssigneeKeySet": [],
+          "taskAssigneeSharingEntrySet": [],
+          "overdueTaskAssigneeSharingEntrySet": [],
+          "incompleteTaskAssigneeSharingEntrySet": [],
+          "taskTotal": 0,
+          "callLogCount": 0,
+          "meetingNotesCount": 0,
+          "totalCallLogDuration": 0,
+          "totalMeetingNotesDuration": 0,
+          "followerCount": 1,
+          "commentCount": 0,
+          "gmailThreadCount": 0,
+          "fileCount": 0,
+          "fields": {
+            "1010": "New test field value",
+            "1001": "New test field value"
+          },
+          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRkeSNAww",
+          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRkeSNAww",
+          "freshness": 1.0
+        }
+    http_version:
+  recorded_at: Wed, 08 Aug 2018 10:19:20 GMT
+- request:
+    method: post
+    uri: https://www.streak.com/api/v1/boxes/agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRkeSNAww
+    body:
+      encoding: UTF-8
+      string: '{"stageKey":5004,"fields":{}}'
     headers:
       Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.3.4p301
-      Content-Type:
       - application/json
-      Content-Length:
-      - '17'
+      Authorization:
+      - Basic TESTAUTH
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
       Host:
       - www.streak.com
-      Authorization:
-      - Basic Y2Q3NTUzYjRjMjRhNGI2NGFkOGZlZDJmNjE2MTFjOTE6
+      User-Agent:
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Streak-Request-Id:
-      - 5a21907800ff0993c21494e71e0001737e6d61696c666f6f6761650001386533646163626361330001015a
+      - 5b6ac3a800ff041da7c25024f90001737e6d61696c666f6f6761650001376530356661643330320001013c
       Content-Type:
       - application/json;charset=utf-8
       X-Cloud-Trace-Context:
-      - 4f851f9d342cd8d9d727f8c62a8e2e84
+      - d9e835911cb7d956d12e70e692872696
       Date:
-      - Fri, 01 Dec 2017 17:25:13 GMT
+      - Wed, 08 Aug 2018 10:19:20 GMT
       Server:
       - Google Frontend
       Content-Length:
-      - '3090'
+      - '2781'
+      Connection:
+      - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJsYXN0U2F2ZWRUaW1lc3RhbXAiOiAxNTEyMTQ5MTEyODAxLAogICJw
-        aXBlbGluZUtleSI6ICJhZ3h6Zm0xaGFXeG1iMjluWVdWeU93c1NERTl5WjJG
-        dWFYcGhkR2x2YmlJVWEybHpjMnRwYzNOaVlXNXJZbUZ1YXk1amIyME1DeElJ
-        VjI5eWEyWnNiM2NZZ0lDQTROSHFtZ29NIiwKICAiY3JlYXRvcktleSI6ICJh
-        Z3h6Zm0xaGFXeG1iMjluWVdWeU53c1NERTl5WjJGdWFYcGhkR2x2YmlJVWEy
-        bHpjMnRwYzNOaVlXNXJZbUZ1YXk1amIyME1DeElFVlhObGNoaUFnSURnNGUt
-        SkNndyIsCiAgImNyZWF0aW9uVGltZXN0YW1wIjogMTUxMjA0MDc5NDMwOCwK
-        ICAibGFzdFVwZGF0ZWRUaW1lc3RhbXAiOiAxNTEyMTQ5MTEyODAxLAogICJs
-        YXN0U3RhZ2VDaGFuZ2VUaW1lc3RhbXAiOiAxNTEyMTQ5MTEyODAxLAogICJ0
-        b3RhbE51bWJlck9mRW1haWxzIjogMCwKICAidG90YWxOdW1iZXJPZlNlbnRF
-        bWFpbHMiOiAwLAogICJ0b3RhbE51bWJlck9mUmVjZWl2ZWRFbWFpbHMiOiAw
-        LAogICJuYW1lIjogIm1hcnN1cGlsYW1pIiwKICAiYXNzaWduZWRUb1NoYXJp
-        bmdFbnRyaWVzIjogWwogICAgewogICAgICAiZGlzcGxheU5hbWUiOiAiS2lz
-        cyBCIiwKICAgICAgImZ1bGxOYW1lIjogIktpc3MgQm90IiwKICAgICAgImVt
-        YWlsIjogImtpc3Nib3RAa2lzc2tpc3NiYW5rYmFuay5jb20iLAogICAgICAi
-        aW1hZ2UiOiAiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy1r
-        YU00VkRYVzBVUS9BQUFBQUFBQUFBSS9BQUFBQUFBQUFCby9JT1RmbkQ3bGFN
-        cy9waG90by5qcGciLAogICAgICAidXNlcktleSI6ICJhZ3h6Zm0xaGFXeG1i
-        MjluWVdWeU53c1NERTl5WjJGdWFYcGhkR2x2YmlJVWEybHpjMnRwYzNOaVlX
-        NXJZbUZ1YXk1amIyME1DeElFVlhObGNoaUFnSURnNGUtSkNndyIKICAgIH0K
-        ICBdLAogICJjcmVhdG9yU2hhcmluZ0VudHJ5IjogewogICAgImRpc3BsYXlO
-        YW1lIjogIktpc3MgQiIsCiAgICAiZnVsbE5hbWUiOiAiS2lzcyBCb3QiLAog
-        ICAgImVtYWlsIjogImtpc3Nib3RAa2lzc2tpc3NiYW5rYmFuay5jb20iLAog
-        ICAgImltYWdlIjogImh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNv
-        bS8ta2FNNFZEWFcwVVEvQUFBQUFBQUFBQUkvQUFBQUFBQUFBQm8vSU9UZm5E
-        N2xhTXMvcGhvdG8uanBnIiwKICAgICJ1c2VyS2V5IjogImFneHpmbTFoYVd4
-        bWIyOW5ZV1Z5TndzU0RFOXlaMkZ1YVhwaGRHbHZiaUlVYTJsemMydHBjM05p
-        WVc1clltRnVheTVqYjIwTUN4SUVWWE5sY2hpQWdJRGc0ZS1KQ2d3IgogIH0s
-        CiAgImZvbGxvd2VyU2hhcmluZ0VudHJpZXMiOiBbCiAgICB7CiAgICAgICJk
-        aXNwbGF5TmFtZSI6ICJLaXNzIEIiLAogICAgICAiZnVsbE5hbWUiOiAiS2lz
-        cyBCb3QiLAogICAgICAiZW1haWwiOiAia2lzc2JvdEBraXNza2lzc2Jhbmti
-        YW5rLmNvbSIsCiAgICAgICJpbWFnZSI6ICJodHRwczovL2xoMy5nb29nbGV1
-        c2VyY29udGVudC5jb20vLWthTTRWRFhXMFVRL0FBQUFBQUFBQUFJL0FBQUFB
-        QUFBQUJvL0lPVGZuRDdsYU1zL3Bob3RvLmpwZyIsCiAgICAgICJ1c2VyS2V5
-        IjogImFneHpmbTFoYVd4bWIyOW5ZV1Z5TndzU0RFOXlaMkZ1YVhwaGRHbHZi
-        aUlVYTJsemMydHBjM05pWVc1clltRnVheTVqYjIwTUN4SUVWWE5sY2hpQWdJ
-        RGc0ZS1KQ2d3IgogICAgfQogIF0sCiAgInN0YWdlS2V5IjogIjUwMDQiLAog
-        ICJmb2xsb3dlcktleXMiOiBbCiAgICAiYWd4emZtMWhhV3htYjI5bllXVnlO
-        d3NTREU5eVoyRnVhWHBoZEdsdmJpSVVhMmx6YzJ0cGMzTmlZVzVyWW1GdWF5
-        NWpiMjBNQ3hJRVZYTmxjaGlBZ0lEZzRlLUpDZ3ciCiAgXSwKICAibGlua2Vk
-        Qm94S2V5cyI6IFtdLAogICJlbWFpbEFkZHJlc3Nlc0F1dG9FeHRyYWN0ZWQi
-        OiBbXSwKICAiZW1haWxBZGRyZXNzZXNCbGFja2xpc3QiOiBbXSwKICAiZW1h
-        aWxBZGRyZXNzZXMiOiBbXSwKICAidGFza0NvbXBsZXRlQ291bnQiOiAwLAog
-        ICJ0YXNrSW5jb21wbGV0ZUNvdW50IjogMCwKICAidGFza092ZXJkdWVDb3Vu
-        dCI6IDAsCiAgInRhc2tBc3NpZ25lZUtleVNldCI6IFtdLAogICJvdmVyZHVl
-        VGFza0Fzc2lnbmVlS2V5U2V0IjogW10sCiAgImluY29tcGxldGVUYXNrQXNz
-        aWduZWVLZXlTZXQiOiBbXSwKICAidGFza0Fzc2lnbmVlU2hhcmluZ0VudHJ5
-        U2V0IjogW10sCiAgIm92ZXJkdWVUYXNrQXNzaWduZWVTaGFyaW5nRW50cnlT
-        ZXQiOiBbXSwKICAiaW5jb21wbGV0ZVRhc2tBc3NpZ25lZVNoYXJpbmdFbnRy
-        eVNldCI6IFtdLAogICJ0YXNrVG90YWwiOiAwLAogICJjYWxsTG9nQ291bnQi
-        OiAwLAogICJtZWV0aW5nTm90ZXNDb3VudCI6IDAsCiAgInRvdGFsQ2FsbExv
-        Z0R1cmF0aW9uIjogMCwKICAidG90YWxNZWV0aW5nTm90ZXNEdXJhdGlvbiI6
-        IDAsCiAgImZvbGxvd2VyQ291bnQiOiAxLAogICJjb21tZW50Q291bnQiOiAw
-        LAogICJnbWFpbFRocmVhZENvdW50IjogMCwKICAiZmlsZUNvdW50IjogMCwK
-        ICAiZmllbGRzIjogewogICAgIjEwMjIiOiAiQ2hhcmxlcyBkZSBHYXVsbGUg
-        QWlycG9ydCAoQ0RHKSwgOTU3MDAgUm9pc3N5LWVuLUZyYW5jZSwgRnJhbmNl
-        IiwKICAgICIxMDIxIjogIjkwMDIiLAogICAgIjEwMjAiOiAibXNkbGZrc2Rm
-        bGtqIiwKICAgICIxMDEzIjogIjMxIiwKICAgICIxMDA3IjogIndpbGxpYW0u
-        cG9sbGV0QGtpc3NraXNzYmFua2JhbmsuY29tIiwKICAgICIxMDI3IjogIkF2
-        ZW50dXJlIGV0IHNwb3J0LCBBcnQgbnVtw6lyaXF1ZSIsCiAgICAiMTAwNCI6
-        ICIwNjg4NzA4MDM5IiwKICAgICIxMDI2IjogInJld2FyZF9iYXNlZCIsCiAg
-        ICAiMTAwMyI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvZnIvcHJvamVjdHMv
-        c2Rsa2ZqIiwKICAgICIxMDAxIjogIk5ldyB0ZXN0IGZpZWxkIHZhbHVlIgog
-        IH0sCiAgImJveEtleSI6ICJhZ3h6Zm0xaGFXeG1iMjluWVdWeU5Bc1NERTl5
-        WjJGdWFYcGhkR2x2YmlJVWEybHpjMnRwYzNOaVlXNXJZbUZ1YXk1amIyME1D
-        eElFUTJGelpSaWhzTVBHQVF3IiwKICAia2V5IjogImFneHpmbTFoYVd4bWIy
-        OW5ZV1Z5TkFzU0RFOXlaMkZ1YVhwaGRHbHZiaUlVYTJsemMydHBjM05pWVc1
-        clltRnVheTVqYjIwTUN4SUVRMkZ6WlJpaHNNUEdBUXciLAogICJmcmVzaG5l
-        c3MiOiAxLjAsCiAgInZpb2xhdGlvbnMiOiBbXQp9
-    http_version: 
-  recorded_at: Fri, 01 Dec 2017 17:25:21 GMT
+      encoding: UTF-8
+      string: |-
+        {
+          "lastSavedTimestamp": 1533723560500,
+          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM",
+          "creatorKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw",
+          "creationTimestamp": 1533648680760,
+          "lastUpdatedTimestamp": 1533723560493,
+          "lastStageChangeTimestamp": 1533718475528,
+          "totalNumberOfEmails": 0,
+          "totalNumberOfSentEmails": 0,
+          "totalNumberOfReceivedEmails": 0,
+          "name": "Some Streak test name",
+          "assignedToSharingEntries": [
+            {
+              "displayName": "Kiss B",
+              "fullName": "Kiss Bot",
+              "email": "kissbot@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+            }
+          ],
+          "creatorSharingEntry": {
+            "displayName": "Kiss B",
+            "fullName": "Kiss Bot",
+            "email": "kissbot@kisskissbankbank.com",
+            "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+            "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+          },
+          "followerSharingEntries": [
+            {
+              "displayName": "Kiss B",
+              "fullName": "Kiss Bot",
+              "email": "kissbot@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+            }
+          ],
+          "stageKey": "5004",
+          "followerKeys": [
+            "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+          ],
+          "linkedBoxKeys": [],
+          "emailAddressesAutoExtracted": [],
+          "emailAddressesBlacklist": [],
+          "emailAddresses": [],
+          "taskCompleteCount": 0,
+          "taskIncompleteCount": 0,
+          "taskOverdueCount": 0,
+          "taskAssigneeKeySet": [],
+          "overdueTaskAssigneeKeySet": [],
+          "incompleteTaskAssigneeKeySet": [],
+          "taskAssigneeSharingEntrySet": [],
+          "overdueTaskAssigneeSharingEntrySet": [],
+          "incompleteTaskAssigneeSharingEntrySet": [],
+          "taskTotal": 0,
+          "callLogCount": 0,
+          "meetingNotesCount": 0,
+          "totalCallLogDuration": 0,
+          "totalMeetingNotesDuration": 0,
+          "followerCount": 1,
+          "commentCount": 0,
+          "gmailThreadCount": 0,
+          "fileCount": 0,
+          "fields": {
+            "1010": "New test field value",
+            "1001": "New test field value"
+          },
+          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRkeSNAww",
+          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRjRkeSNAww",
+          "freshness": 1.0,
+          "violations": []
+        }
+    http_version:
+  recorded_at: Wed, 08 Aug 2018 10:19:20 GMT
 recorded_with: VCR 3.0.3

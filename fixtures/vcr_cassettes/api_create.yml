@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://www.streak.com/api/v1/pipelines/agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM/boxes
+    body:
+      encoding: UTF-8
+      string: name=Streak+test+box+name
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Basic TESTAUTH
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - www.streak.com
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Streak-Request-Id:
+      - 5b6ab9c600ff0cda6b81a1cea30001737e6d61696c666f6f67616500013765303566616433303200010157
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Cloud-Trace-Context:
+      - 5bcf06ab9a379d676fcf65ba73731b7b
+      Date:
+      - Wed, 08 Aug 2018 09:37:11 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '2706'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "lastSavedTimestamp": 1533721031006,
+          "pipelineKey": "agxzfm1haWxmb29nYWVyOwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIIV29ya2Zsb3cYgICAkJnrmAoM",
+          "creatorKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw",
+          "creationTimestamp": 1533721030914,
+          "lastUpdatedTimestamp": 1533721030914,
+          "lastStageChangeTimestamp": 1533721030914,
+          "totalNumberOfEmails": 0,
+          "totalNumberOfSentEmails": 0,
+          "totalNumberOfReceivedEmails": 0,
+          "name": "Streak test box name",
+          "assignedToSharingEntries": [
+            {
+              "displayName": "Kiss B",
+              "fullName": "Kiss Bot",
+              "email": "kissbot@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+            }
+          ],
+          "creatorSharingEntry": {
+            "displayName": "Kiss B",
+            "fullName": "Kiss Bot",
+            "email": "kissbot@kisskissbankbank.com",
+            "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+            "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+          },
+          "followerSharingEntries": [
+            {
+              "displayName": "Kiss B",
+              "fullName": "Kiss Bot",
+              "email": "kissbot@kisskissbankbank.com",
+              "image": "https://lh3.googleusercontent.com/-kaM4VDXW0UQ/AAAAAAAAAAI/AAAAAAAAABo/IOTfnD7laMs/photo.jpg",
+              "userKey": "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+            }
+          ],
+          "stageKey": "5001",
+          "followerKeys": [
+            "agxzfm1haWxmb29nYWVyNwsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEVXNlchiAgIDg4e-JCgw"
+          ],
+          "linkedBoxKeys": [],
+          "emailAddressesAutoExtracted": [],
+          "emailAddressesBlacklist": [],
+          "emailAddresses": [],
+          "taskCompleteCount": 0,
+          "taskIncompleteCount": 0,
+          "taskOverdueCount": 0,
+          "taskAssigneeKeySet": [],
+          "overdueTaskAssigneeKeySet": [],
+          "incompleteTaskAssigneeKeySet": [],
+          "taskAssigneeSharingEntrySet": [],
+          "overdueTaskAssigneeSharingEntrySet": [],
+          "incompleteTaskAssigneeSharingEntrySet": [],
+          "taskTotal": 0,
+          "callLogCount": 0,
+          "meetingNotesCount": 0,
+          "totalCallLogDuration": 0,
+          "totalMeetingNotesDuration": 0,
+          "followerCount": 1,
+          "commentCount": 0,
+          "gmailThreadCount": 0,
+          "fileCount": 0,
+          "fields": {},
+          "boxKey": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRiB5paOAww",
+          "key": "agxzfm1haWxmb29nYWVyNAsSDE9yZ2FuaXphdGlvbiIUa2lzc2tpc3NiYW5rYmFuay5jb20MCxIEQ2FzZRiB5paOAww",
+          "freshness": 1.0,
+          "violations": []
+        }
+    http_version:
+  recorded_at: Wed, 08 Aug 2018 09:37:11 GMT
+recorded_with: VCR 3.0.3

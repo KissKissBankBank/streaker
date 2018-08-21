@@ -4,9 +4,6 @@ Ruby gem to access Streak's API.
 
 ![Streaker on Ninja Warrior](https://media.giphy.com/media/LMfZEPTKKRgJy/giphy.gif)
 
-This gem acts as a wrapper around the `streak-ruby` gem to provide a configuration
-for the box keys and a shorter syntax.
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -36,6 +33,7 @@ box = Streaker::Box.create(
   name: 'Some box name',
   stage: :my_stage,
   my_field: 'Some field value',
+  assigned_to: ['streak-owner@email.com', 'streak-contributor@email.com', …]
   …
 )
 box.key # => your new box's key
@@ -46,10 +44,12 @@ Update a box:
 ```rb
 box = Streaker::Box.new('a_box_key')
 box.update(
+  name: 'my box name',
+  stage: :some_other_stage,
   my_field: 'A new field value',
-  …
 )
 ```
+
 
 ## Configuration
 
