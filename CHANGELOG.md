@@ -2,7 +2,7 @@
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.1.0] - 2018-08-07
+## [1.1.0] - 2018-08-21
 
 Features:
 - Replace `streak-ruby` dependency by `http`.
