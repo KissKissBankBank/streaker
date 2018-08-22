@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.1] - 2018-08-22
+
+Bugfix:
+ - Use `http` as a production dependency
+
 ## [1.1.0] - 2018-08-21
 
 Features:
