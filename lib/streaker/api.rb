@@ -43,6 +43,9 @@ module Streaker
       {
         name: attributes.delete(:name),
         stageKey: find_streak_stage_key_key(attributes.delete(:stage)),
+        assignedToSharingEntries: format_emails(
+          attributes.delete(:assigned_to),
+        ),
         fields: format_fields_for_streak(attributes)
       }.delete_if { |_k, v| v.nil? }
     end
@@ -57,6 +60,8 @@ module Streaker
     end
 
     def format_emails(array)
+      return unless array
+
       array.map do |email|
         {
           email: email

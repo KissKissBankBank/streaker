@@ -18,6 +18,17 @@ RSpec.describe Streaker::API do
         end
       end
 
+      it 'updates the box owner' do
+        VCR.use_cassette('api_owner_update') do
+          expect(
+            api.update_box(
+              key,
+              assigned_to: ['kissbot@kisskissbankbank.com']
+            )
+          ).to be_truthy
+        end
+      end
+
       it 'changes stage' do
         VCR.use_cassette('api_stage_update') do
           expect(api.update_box(key, stage: 5003)).to be_truthy

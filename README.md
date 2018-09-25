@@ -46,6 +46,7 @@ box = Streaker::Box.new('a_box_key')
 box.update(
   name: 'my box name',
   stage: :some_other_stage,
+  assigned_to: ['streak-owner@email.com', 'streak-contributor@email.com', …]
   my_field: 'A new field value',
 )
 ```

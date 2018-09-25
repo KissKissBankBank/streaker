@@ -23,6 +23,16 @@ RSpec.describe Streaker::Box do
         end
       end
 
+      it 'updates box owner' do
+        VCR.use_cassette('box_owner_update') do
+          expect(
+            box.update(
+              assigned_to: ['kissbot@kisskissbankbank.com'],
+            ),
+          ).to be_truthy
+        end
+      end
+
       it 'changes stage' do
         VCR.use_cassette('box_stage_update') do
           expect(box.update(stage: :fake_stage)).to be_truthy
