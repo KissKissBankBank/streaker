@@ -2,6 +2,11 @@
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.2.0] - 2018-09-25
+
+Feature:
+- Update the owner of a box with box.update
+
 ## [1.1.1] - 2018-08-22
 
 Bugfix:
