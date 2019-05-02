@@ -18,8 +18,6 @@ module Streaker
     #       some_field_key: 'Some field value',
     #       …
     #     )
-    #
-    # You can also give a `stage: :stage` or
     def update(attributes)
       verify_if_box_exists
       api_result = api.update_box(key, attributes)
