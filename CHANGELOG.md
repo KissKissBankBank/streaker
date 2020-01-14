@@ -2,15 +2,20 @@
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+Fix:
+- Allow higher versions of the `http` gem.
+
 ## [1.2.0] - 2018-09-25
 
 Feature:
-- Update the owner of a box with box.update
+- Update the owner of a box with `box.update`.
 
 ## [1.1.1] - 2018-08-22
 
 Bugfix:
- - Use `http` as a production dependency
+ - Use `http` as a production dependency.
 
 ## [1.1.0] - 2018-08-21
 

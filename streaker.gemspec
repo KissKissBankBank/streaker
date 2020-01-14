@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # API calls
-  spec.add_dependency 'http', '~> 3.3.0'
+  spec.add_dependency 'http', '>= 3.3.0'
 
   # Record HTTP Interactions
   spec.add_development_dependency 'vcr', '~> 3.0'
